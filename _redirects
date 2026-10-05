@@ -1,0 +1,6 @@
+# Netlify Clean URL and SPA routing configuration
+/about        /about.html       200
+/portfolio    /portfolio.html   200
+/contact      /contact.html     200
+/resume       /resume.html      200
+/*            /404.html         404
