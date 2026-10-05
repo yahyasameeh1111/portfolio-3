@@ -152,10 +152,10 @@ a:hover .arrow-icon {
 
 /* Big Hero Typography Layering */
 .hero-giant-title {
-  font-size: clamp(2.35rem, 10.5vw, 10.5rem);
+  font-size: clamp(2.1rem, 7.8vw, 8.5rem);
   font-weight: 800;
-  letter-spacing: -0.05em;
-  line-height: 0.92;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
   text-align: center;
   color: #ffffff;
   user-select: none;
@@ -167,7 +167,7 @@ a:hover .arrow-icon {
 
 /* Fade mask for title overlap */
 .hero-title-mask {
-  background: linear-gradient(180deg, #ffffff 40%, rgba(255, 255, 255, 0.15) 100%);
+  background: linear-gradient(180deg, #ffffff 45%, rgba(255, 255, 255, 0.12) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -175,10 +175,10 @@ a:hover .arrow-icon {
 /* Top soft fade overlay to seamlessly merge title with cards */
 .hero-mask-gradient {
   position: absolute;
-  bottom: -40px;
+  bottom: -30px;
   left: 0;
   right: 0;
-  height: 120px;
+  height: 140px;
   background: linear-gradient(to bottom, transparent, var(--bg-primary) 95%);
   pointer-events: none;
   z-index: 1;
