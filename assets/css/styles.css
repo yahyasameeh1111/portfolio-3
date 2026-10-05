@@ -152,10 +152,10 @@ a:hover .arrow-icon {
 
 /* Big Hero Typography Layering */
 .hero-giant-title {
-  font-size: clamp(3.75rem, 11vw, 10.5rem);
+  font-size: clamp(2.35rem, 10.5vw, 10.5rem);
   font-weight: 800;
   letter-spacing: -0.05em;
-  line-height: 0.9;
+  line-height: 0.92;
   text-align: center;
   color: #ffffff;
   user-select: none;
