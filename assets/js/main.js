@@ -1,12 +1,11 @@
 /**
  * Yahya Sameeh P P — Portfolio Interactive Engine
- * Micro-interactions, Live Time (IST), Card Spotlight, Dynamic Hover States, and Smooth View Transitions
+ * Micro-interactions, Live Time (IST), Card Spotlight, and Smooth View Transitions
  */
 
 document.addEventListener('DOMContentLoaded', () => {
   initLiveClock();
   initCardSpotlight();
-  initHeroHoverInteractions();
   initPillSelections();
   initContactForm();
   initPageTransitions();
@@ -14,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /**
- * Live Local Clock: Malappuram, Kerala (Asia/Kolkata - IST)
+ * Live Local Clock: Edappatta, Kerala (Asia/Kolkata - IST)
  */
 function initLiveClock() {
   const clockElements = document.querySelectorAll('.live-time-display');
@@ -73,51 +72,13 @@ function initCardSpotlight() {
 }
 
 /**
- * Dynamic Hero Title & Picture Section Hover Engine
- * Transitions top hero title when hovering over cards (and writes "I AM YAHYA SAMEEH PP" when hovering over the portrait)
- */
-function initHeroHoverInteractions() {
-  const heroTitle = document.getElementById('heroDisplayTitle');
-  if (!heroTitle) return;
-
-  const defaultTitle = heroTitle.textContent.trim();
-  const interactiveCards = document.querySelectorAll('[data-hero-title]');
-
-  heroTitle.style.transition = 'opacity 0.22s cubic-bezier(0.16, 1, 0.3, 1), transform 0.22s cubic-bezier(0.16, 1, 0.3, 1)';
-
-  interactiveCards.forEach((card) => {
-    card.addEventListener('mouseenter', () => {
-      const hoverText = card.dataset.heroTitle;
-      if (hoverText) {
-        heroTitle.style.opacity = '0';
-        heroTitle.style.transform = 'translateY(-6px)';
-        setTimeout(() => {
-          heroTitle.textContent = hoverText;
-          heroTitle.style.opacity = '1';
-          heroTitle.style.transform = 'translateY(0)';
-        }, 120);
-      }
-    });
-
-    card.addEventListener('mouseleave', () => {
-      heroTitle.style.opacity = '0';
-      heroTitle.style.transform = 'translateY(6px)';
-      setTimeout(() => {
-        heroTitle.textContent = defaultTitle;
-        heroTitle.style.opacity = '1';
-        heroTitle.style.transform = 'translateY(0)';
-      }, 120);
-    });
-  });
-}
-
-/**
  * Interactive Form Pill Selectors
  */
 function initPillSelections() {
   const pills = document.querySelectorAll('.tag-pill');
   pills.forEach((pill) => {
     pill.addEventListener('click', (e) => {
+      // Toggle for multi-select, or group radio
       const isRadio = pill.dataset.group !== undefined;
       if (isRadio) {
         const group = pill.dataset.group;
@@ -143,6 +104,7 @@ function initContactForm() {
   if (!form) return;
 
   form.addEventListener('submit', (e) => {
+    // If handled via standard Netlify form post, let it proceed, or simulate smooth client response
     const submitBtn = form.querySelector('button[type="submit"]');
     const originalText = submitBtn ? submitBtn.innerHTML : 'Submit';
 
@@ -157,6 +119,7 @@ function initContactForm() {
       submitBtn.disabled = true;
     }
 
+    // Let netlify form or mailto handle or show success notice
     setTimeout(() => {
       if (submitBtn) {
         submitBtn.innerHTML = `✓ Message Sent!`;
@@ -199,6 +162,7 @@ function initPageTransitions() {
  */
 function initKeyboardNav() {
   window.addEventListener('keydown', (e) => {
+    // Only if not focused on input or textarea
     if (['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName)) return;
 
     if (e.key === 'Escape') {

@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yahya Sameeh P P — Portfolio</title>
-  <meta name="description" content="Ultra-dark minimalist personal portfolio of Yahya Sameeh P P. Systems builder, developer, and cybersecurity researcher based in Malappuram, Kerala.">
+  <title>Yahya Sameeh P P — Web Developer & Cybersecurity Enthusiast</title>
+  <meta name="description" content="Ultra-dark minimalist personal portfolio of Yahya Sameeh P P. Web developer, cybersecurity enthusiast, and systems builder based in Malappuram, Kerala.">
   <meta name="theme-color" content="#080808">
 
   <!-- OpenGraph -->
   <meta property="og:title" content="Yahya Sameeh P P — Portfolio">
-  <meta property="og:description" content="Ultra-dark minimalist bento-grid portfolio of Yahya Sameeh P P.">
+  <meta property="og:description" content="Ultra-dark minimalist bento-grid portfolio. Web developer & cybersecurity enthusiast.">
   <meta property="og:type" content="website">
 
   <!-- Tailwind CSS -->
@@ -57,13 +57,18 @@
   <!-- Subtle Film Grain Overlay -->
   <div class="film-grain"></div>
 
-  <!-- Persistent Top Header (Minimalist 2-Element Layout) -->
+  <!-- Persistent Top Header (Extended Full-Width with Generous Margins) -->
   <header class="sticky top-0 z-50 w-full glass-header px-4 sm:px-8 lg:px-12 xl:px-16 py-3.5 sm:py-4 transition-all duration-300">
     <div class="max-w-[1720px] mx-auto flex items-center justify-between text-xs tracking-tight text-[#8e8e93]">
       <!-- Left: Identity -->
       <a href="index.html" class="font-medium text-[#f5f5f7] hover:text-white transition-colors text-xs sm:text-sm">
         Yahya Sameeh P P
       </a>
+
+      <!-- Center: Role (Hidden on mobile/tablet for clean minimalist top bar) -->
+      <div class="hidden lg:block font-normal text-[#a1a1aa] tracking-normal text-xs sm:text-sm">
+        Web Developer & Cybersecurity Enthusiast
+      </div>
 
       <!-- Right: Location & Live Local Time Indicator -->
       <div class="flex items-center gap-2 font-mono text-[11px] sm:text-xs">
@@ -80,9 +85,9 @@
   <!-- Main Hero & Extended Bento Grid Container -->
   <main class="w-full max-w-[1720px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20 pt-6 sm:pt-10 lg:pt-12 pb-14 sm:pb-20 flex-1 flex flex-col justify-center relative page-fade-in">
     
-    <!-- Hero Giant Typography & Dynamic Interactive Title Section -->
-    <div class="relative w-full overflow-hidden select-none pb-2 sm:pb-4 flex justify-center items-center">
-      <h1 id="heroDisplayTitle" class="hero-giant-title hero-title-mask tracking-tight uppercase">
+    <!-- Hero Giant Typography: YAHYA SAMEEH PP with Soft Blur Layering -->
+    <div class="relative w-full overflow-hidden select-none pb-2 sm:pb-4 flex justify-center">
+      <h1 class="hero-giant-title hero-title-mask tracking-tight uppercase">
         YAHYA SAMEEH PP
       </h1>
       <!-- Frosted blur gradient mask so extended cards overlap seamlessly -->
@@ -91,34 +96,23 @@
 
     <!-- =========================================================================
          EXTENDED BENTO GRID LAYOUT:
-         - Picture sections reveal above text on hover for About, Portfolio, Contact, Resume
-         - Photo card writes "I am Yahya Sameeh P P" on cursor hover
+         - Boxes extended horizontally to span across the screen cleanly
+         - Dimensions increased for a bold, architectural, elevated feel
          ========================================================================= -->
     <div class="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-4 sm:gap-5 lg:gap-6 relative z-10 -mt-6 sm:-mt-10 lg:-mt-14">
 
       <!-- ----------------------------------------------------
-           ROW 1: About & Portfolio
+           ROW 1: About & Portfolio (Extended Dimensions)
            ---------------------------------------------------- -->
       
       <!-- Bento Card 1: About -->
+      <!-- Mobile: full-width / Tablet: 3 cols / Laptop & Desktop: 4 cols -->
       <a 
         href="about.html" 
         data-nav 
-        data-hero-title="ABOUT // YAHYA SAMEEH"
-        class="bento-card group col-span-1 md:col-span-3 lg:col-span-4 p-5 sm:p-7 lg:p-8 xl:p-9 flex flex-col justify-between h-52 sm:h-64 md:h-72 lg:h-[340px] xl:h-[390px] 2xl:h-[430px]"
+        class="bento-card group col-span-1 md:col-span-3 lg:col-span-4 p-6 sm:p-8 lg:p-9 xl:p-10 flex flex-col justify-end h-52 sm:h-64 md:h-72 lg:h-[340px] xl:h-[390px] 2xl:h-[430px]"
       >
-        <!-- Picture Section (Reveals on Hover) -->
-        <div class="w-full flex-1 rounded-2xl overflow-hidden relative mb-4 opacity-0 group-hover:opacity-100 transition-all duration-500 transform group-hover:scale-[1.01] bg-black/40 border border-white/[0.04]">
-          <img 
-            src="assets/images/cyber_sec.jpg" 
-            alt="About Visual Preview" 
-            class="w-full h-full object-cover grayscale contrast-125 brightness-90 group-hover:scale-105 transition-transform duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-[#121214] via-transparent to-transparent"></div>
-        </div>
-
-        <!-- Bottom Label & Arrow -->
-        <div class="flex items-center justify-between w-full pt-1">
+        <div class="flex items-center justify-between w-full">
           <span class="text-lg sm:text-xl lg:text-2xl font-medium tracking-tight text-[#f5f5f7]">About</span>
           <span class="arrow-icon">
             <i data-lucide="arrow-up-right" class="w-5 h-5 sm:w-6 sm:h-6"></i>
@@ -127,24 +121,13 @@
       </a>
 
       <!-- Bento Card 2: Portfolio (Wide Extended Card) -->
+      <!-- Mobile: full-width / Tablet: 3 cols / Laptop & Desktop: 8 cols -->
       <a 
         href="portfolio.html" 
         data-nav 
-        data-hero-title="PORTFOLIO // SELECTED WORK"
-        class="bento-card group col-span-1 md:col-span-3 lg:col-span-8 p-5 sm:p-7 lg:p-8 xl:p-9 flex flex-col justify-between h-52 sm:h-64 md:h-72 lg:h-[340px] xl:h-[390px] 2xl:h-[430px]"
+        class="bento-card group col-span-1 md:col-span-3 lg:col-span-8 p-6 sm:p-8 lg:p-9 xl:p-10 flex flex-col justify-end h-52 sm:h-64 md:h-72 lg:h-[340px] xl:h-[390px] 2xl:h-[430px]"
       >
-        <!-- Picture Section (Reveals on Hover) -->
-        <div class="w-full flex-1 rounded-2xl overflow-hidden relative mb-4 opacity-0 group-hover:opacity-100 transition-all duration-500 transform group-hover:scale-[1.01] bg-black/40 border border-white/[0.04]">
-          <img 
-            src="assets/images/api_lab.jpg" 
-            alt="Portfolio Visual Mockup" 
-            class="w-full h-full object-cover contrast-110 brightness-95 group-hover:scale-105 transition-transform duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-[#121214] via-transparent to-transparent"></div>
-        </div>
-
-        <!-- Bottom Label & Arrow -->
-        <div class="flex items-center justify-between w-full pt-1">
+        <div class="flex items-center justify-between w-full">
           <span class="text-lg sm:text-xl lg:text-2xl font-medium tracking-tight text-[#f5f5f7]">Portfolio</span>
           <span class="arrow-icon">
             <i data-lucide="arrow-up-right" class="w-5 h-5 sm:w-6 sm:h-6"></i>
@@ -157,25 +140,13 @@
            ---------------------------------------------------- -->
 
       <!-- Bento Card 3: Contact (Wide Extended Card) -->
+      <!-- Mobile: full-width / Tablet: 3 cols / Laptop & Desktop: 5 cols -->
       <a 
         href="contact.html" 
         data-nav 
-        data-hero-title="CONTACT // LET'S TALK"
-        class="bento-card group col-span-1 md:col-span-3 lg:col-span-5 p-5 sm:p-7 lg:p-8 xl:p-9 flex flex-col justify-between h-52 sm:h-72 md:h-80 lg:h-[350px] xl:h-[400px] 2xl:h-[440px]"
+        class="bento-card group col-span-1 md:col-span-3 lg:col-span-5 p-6 sm:p-8 lg:p-9 xl:p-10 flex flex-col justify-end h-52 sm:h-72 md:h-80 lg:h-[350px] xl:h-[400px] 2xl:h-[440px]"
       >
-        <!-- Picture Section (Reveals on Hover) -->
-        <div class="w-full flex-1 rounded-2xl overflow-hidden relative mb-4 opacity-0 group-hover:opacity-100 transition-all duration-500 transform group-hover:scale-[1.01] bg-gradient-to-br from-[#18181c] to-[#0f0f11] border border-white/[0.06] flex items-center justify-center p-6">
-          <div class="flex flex-col items-center justify-center gap-3 text-center">
-            <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400">
-              <i data-lucide="send" class="w-6 h-6"></i>
-            </div>
-            <span class="text-xs sm:text-sm font-mono text-[#a1a1aa]">yahyasameeh1111@gmail.com</span>
-          </div>
-          <div class="absolute inset-0 bg-gradient-to-t from-[#121214] via-transparent to-transparent"></div>
-        </div>
-
-        <!-- Bottom Label & Arrow -->
-        <div class="flex items-center justify-between w-full pt-1">
+        <div class="flex items-center justify-between w-full">
           <span class="text-lg sm:text-xl lg:text-2xl font-medium tracking-tight text-[#f5f5f7]">Contact</span>
           <span class="arrow-icon">
             <i data-lucide="arrow-up-right" class="w-5 h-5 sm:w-6 sm:h-6"></i>
@@ -183,34 +154,20 @@
         </div>
       </a>
 
-      <!-- Bento Card 4: Portrait / Visual (Photo of me with Interactive Hover Text) -->
-      <div 
-        id="portraitCard"
-        data-hero-title="I AM YAHYA SAMEEH PP"
-        class="bento-card group col-span-1 md:col-span-3 lg:col-span-3 h-72 sm:h-80 md:h-80 lg:h-[350px] xl:h-[400px] 2xl:h-[440px] relative p-0 overflow-hidden bg-black flex items-center justify-center cursor-pointer"
-      >
+      <!-- Bento Card 4: Portrait / Visual (Extended Vertical Monochromatic Frame) -->
+      <!-- Mobile: full-width / Tablet: 3 cols / Laptop & Desktop: 3 cols -->
+      <div class="bento-card group col-span-1 md:col-span-3 lg:col-span-3 h-72 sm:h-80 md:h-80 lg:h-[350px] xl:h-[400px] 2xl:h-[440px] relative p-0 overflow-hidden bg-black flex items-center justify-center">
         <img 
           src="assets/images/portrait.jpg" 
           alt="Yahya Sameeh P P" 
           class="w-full h-full object-cover grayscale contrast-125 brightness-95 group-hover:scale-105 group-hover:brightness-105 transition-all duration-700 ease-out"
         />
         <!-- Subtle dark vignette overlay -->
-        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20 pointer-events-none"></div>
-
-        <!-- Hover Reveal: Writes "I am Yahya Sameeh P P" -->
-        <div class="absolute inset-0 bg-black/45 backdrop-blur-[3px] opacity-0 group-hover:opacity-100 transition-all duration-400 flex items-center justify-center p-6 text-center">
-          <div class="transform translate-y-3 group-hover:translate-y-0 transition-transform duration-400 space-y-2">
-            <p class="text-base sm:text-lg lg:text-xl font-bold tracking-tight text-white drop-shadow-md">
-              I am Yahya Sameeh P P
-            </p>
-            <span class="text-xs font-mono text-emerald-400 block">
-              ● Active in Malappuram
-            </span>
-          </div>
-        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20 pointer-events-none"></div>
       </div>
 
       <!-- Bento Right Column: Split into Tech Squircles & Resume -->
+      <!-- Mobile: full-width (2 cols grid) / Tablet: 6 cols (2 cols grid) / Laptop & Desktop: 4 cols (stacked) -->
       <div class="col-span-1 md:col-span-6 lg:col-span-4 grid grid-cols-2 lg:grid-cols-1 gap-4 sm:gap-5 lg:gap-6 h-auto lg:h-[350px] xl:h-[400px] 2xl:h-[440px]">
 
         <!-- Bento Card 5: Tooling / Tech Squircles (Top Card) -->
@@ -237,19 +194,9 @@
         <a 
           href="resume.html" 
           data-nav 
-          data-hero-title="RESUME // CURRICULUM VITAE"
-          class="bento-card group p-5 sm:p-6 lg:p-7 xl:p-8 flex flex-col justify-between h-40 sm:h-44 lg:h-[165px] xl:h-[190px] 2xl:h-[210px]"
+          class="bento-card group p-6 sm:p-7 lg:p-8 xl:p-9 flex flex-col justify-end h-40 sm:h-44 lg:h-[165px] xl:h-[190px] 2xl:h-[210px]"
         >
-          <!-- Picture Section (Reveals on Hover) -->
-          <div class="w-full flex-1 rounded-xl overflow-hidden relative mb-2 opacity-0 group-hover:opacity-100 transition-all duration-500 transform group-hover:scale-[1.01] bg-gradient-to-br from-[#18181c] to-[#0f0f11] border border-white/[0.06] flex items-center justify-center px-3 py-1">
-            <div class="flex items-center gap-2 text-xs font-mono text-[#a1a1aa]">
-              <i data-lucide="file-text" class="w-4 h-4 text-purple-400"></i>
-              <span>Curriculum Vitae</span>
-            </div>
-          </div>
-
-          <!-- Bottom Label & Arrow -->
-          <div class="flex items-center justify-between w-full pt-1">
+          <div class="flex items-center justify-between w-full">
             <span class="text-lg sm:text-xl lg:text-2xl font-medium tracking-tight text-[#f5f5f7]">Resume</span>
             <span class="arrow-icon">
               <i data-lucide="arrow-up-right" class="w-5 h-5 sm:w-6 sm:h-6"></i>

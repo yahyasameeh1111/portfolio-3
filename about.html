@@ -52,7 +52,10 @@
         <span>Home</span>
       </a>
 
-
+      <!-- Center: Role -->
+      <div class="hidden md:block font-normal text-[#a1a1aa] tracking-normal">
+        Web Developer & Cybersecurity Enthusiast
+      </div>
 
       <!-- Right: Location & Live Local Time Indicator -->
       <div class="flex items-center gap-2 font-mono text-[11px] sm:text-xs">
@@ -77,17 +80,33 @@
     </div>
 
     <!-- Bio Section with Side Portrait -->
-    <!-- Bio Section -->
-    <div class="max-w-4xl space-y-6 mb-20">
-      <p class="text-xl sm:text-2xl font-normal leading-relaxed text-[#d4d4d8]">
-        I'm <span class="text-white font-medium">Yahya Sameeh P P</span> — a developer and cybersecurity enthusiast building modern web applications, exploring backend architectures, and studying secure systems.
-      </p>
-      <p class="text-base sm:text-lg text-[#8e8e93] leading-relaxed">
-        I specialize in crafting digital experiences that feel considered from every angle — the layout, the type, the performance, and the defensive boundaries most users never have to think about. Consistency and architectural rigor matter to me, not as rigid rules, but because they make software resilient and trustworthy.
-      </p>
-      <p class="text-base sm:text-lg text-[#8e8e93] leading-relaxed">
-        Alongside building web applications, I immerse myself in ethical security research, vulnerability discovery, and low-level computing primitives — driven by curiosity and an obsession with understanding how complex systems function from silicon to the browser.
-      </p>
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 items-start mb-20">
+      <div class="lg:col-span-8 space-y-6">
+        <p class="text-xl sm:text-2xl font-normal leading-relaxed text-[#d4d4d8]">
+          I'm <span class="text-white font-medium">Yahya Sameeh P P</span> — a developer and cybersecurity enthusiast building modern web applications, exploring backend architectures, and studying secure systems.
+        </p>
+        <p class="text-base sm:text-lg text-[#8e8e93] leading-relaxed">
+          I specialize in crafting digital experiences that feel considered from every angle — the layout, the type, the performance, and the defensive boundaries most users never have to think about. Consistency and architectural rigor matter to me, not as rigid rules, but because they make software resilient and trustworthy.
+        </p>
+        <p class="text-base sm:text-lg text-[#8e8e93] leading-relaxed">
+          Alongside building web applications, I immerse myself in ethical security research, vulnerability discovery, and low-level computing primitives — driven by curiosity and an obsession with understanding how complex systems function from silicon to the browser.
+        </p>
+      </div>
+
+      <!-- Monochromatic Portrait Card -->
+      <div class="lg:col-span-4">
+        <div class="bento-card p-2 rounded-2xl bg-[#121214] border border-white/[0.08] overflow-hidden group">
+          <img 
+            src="assets/images/portrait.jpg" 
+            alt="Yahya Sameeh P P" 
+            class="w-full h-80 sm:h-96 object-cover rounded-xl grayscale contrast-125 brightness-95 group-hover:scale-105 transition-transform duration-500"
+          />
+          <div class="p-3 text-xs font-mono text-[#a1a1aa] flex justify-between items-center">
+            <span>Yahya Sameeh P P</span>
+            <span class="text-emerald-400">Malappuram, Kerala</span>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Philosophy & Core Tenets (3 Columns matching reference) -->
@@ -135,7 +154,56 @@
       </div>
     </div>
 
+    <!-- Experience & Technical Timeline -->
+    <div class="mb-24">
+      <div class="text-xs font-mono text-[#71717a] uppercase tracking-wider mb-8">
+        Technical Journey & Milestones
+      </div>
 
+      <div class="border-t border-white/[0.08] divide-y divide-white/[0.08]">
+        <!-- Item 1 -->
+        <div class="py-6 sm:py-8 grid grid-cols-1 md:grid-cols-12 gap-4">
+          <div class="md:col-span-3 text-xs sm:text-sm font-mono text-[#71717a]">
+            2024 — Present
+          </div>
+          <div class="md:col-span-4">
+            <h3 class="text-base sm:text-lg font-medium text-[#f5f5f7]">Full-Stack Web Development</h3>
+            <span class="text-xs font-mono text-[#a1a1aa]">Modern Web Applications</span>
+          </div>
+          <div class="md:col-span-5 text-sm text-[#8e8e93] leading-relaxed">
+            Developing high-performance, dark-themed responsive interfaces with HTML, CSS, JavaScript, Tailwind, and Supabase. Implementing backend database integration, Row Level Security, and automated Netlify deployments.
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="py-6 sm:py-8 grid grid-cols-1 md:grid-cols-12 gap-4">
+          <div class="md:col-span-3 text-xs sm:text-sm font-mono text-[#71717a]">
+            2023 — Present
+          </div>
+          <div class="md:col-span-4">
+            <h3 class="text-base sm:text-lg font-medium text-[#f5f5f7]">Cybersecurity Research</h3>
+            <span class="text-xs font-mono text-[#a1a1aa]">Ethical Hacking & Network Auditing</span>
+          </div>
+          <div class="md:col-span-5 text-sm text-[#8e8e93] leading-relaxed">
+            Active penetration testing laboratories, network vulnerability auditing with Nmap, web application security proxy inspection using Burp Suite, and environment hardening in Kali Linux.
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="py-6 sm:py-8 grid grid-cols-1 md:grid-cols-12 gap-4">
+          <div class="md:col-span-3 text-xs sm:text-sm font-mono text-[#71717a]">
+            2022 — 2024
+          </div>
+          <div class="md:col-span-4">
+            <h3 class="text-base sm:text-lg font-medium text-[#f5f5f7]">Systems Programming</h3>
+            <span class="text-xs font-mono text-[#a1a1aa]">Foundational Computing</span>
+          </div>
+          <div class="md:col-span-5 text-sm text-[#8e8e93] leading-relaxed">
+            Studying memory layouts, dynamic memory allocation, pointer arithmetic, algorithms, and core system architectures in C and C++.
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 
