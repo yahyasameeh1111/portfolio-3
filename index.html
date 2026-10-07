@@ -1,16 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="dark scroll-smooth">
+<html lang="en" class="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yahya Sameeh P P — Web Developer & Cybersecurity Enthusiast</title>
-  <meta name="description" content="Ultra-dark minimalist personal portfolio of Yahya Sameeh P P. Web developer, cybersecurity enthusiast, and systems builder based in Malappuram, Kerala.">
+  <title>Yahya Sameeh P P — Portfolio</title>
+  <meta name="description" content="Yahya Sameeh P P — Web Developer, Cybersecurity Enthusiast, and Systems Builder based in Malappuram, Kerala.">
   <meta name="theme-color" content="#080808">
-
-  <!-- OpenGraph -->
-  <meta property="og:title" content="Yahya Sameeh P P — Portfolio">
-  <meta property="og:description" content="Ultra-dark minimalist bento-grid portfolio. Web developer & cybersecurity enthusiast.">
-  <meta property="og:type" content="website">
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -32,15 +27,6 @@
           fontFamily: {
             sans: ['"Plus Jakarta Sans"', 'sans-serif'],
             mono: ['"JetBrains Mono"', 'monospace'],
-          },
-          screens: {
-            'xs': '480px',
-            'sm': '640px',
-            'md': '768px',
-            'lg': '1024px',
-            'xl': '1280px',
-            '2xl': '1536px',
-            '3xl': '1720px',
           }
         }
       }
@@ -53,19 +39,17 @@
   <!-- Custom Styles -->
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body class="bg-[#080808] text-[#f5f5f7] min-h-screen flex flex-col justify-between selection:bg-white/20 selection:text-white">
-  <!-- Subtle Film Grain Overlay -->
+<body class="bg-[#080808] text-[#f5f5f7] min-h-screen lg:h-screen lg:max-h-screen lg:overflow-hidden flex flex-col justify-between selection:bg-white/20 selection:text-white">
+  <!-- Film Grain Overlay -->
   <div class="film-grain"></div>
 
-  <!-- Persistent Top Header (Extended Full-Width with Generous Margins) -->
-  <header class="sticky top-0 z-50 w-full glass-header px-4 sm:px-8 lg:px-12 xl:px-16 py-3.5 sm:py-4 transition-all duration-300">
-    <div class="max-w-[1720px] mx-auto flex items-center justify-between text-xs tracking-tight text-[#8e8e93]">
+  <!-- Persistent Top Header (Full-Width Edge-to-Edge) -->
+  <header class="w-full glass-header px-4 sm:px-6 lg:px-8 py-2 sm:py-2.5 transition-all duration-300 z-50 flex-shrink-0">
+    <div class="w-full flex items-center justify-between text-xs tracking-tight text-[#8e8e93]">
       <!-- Left: Identity -->
       <a href="index.html" class="font-medium text-[#f5f5f7] hover:text-white transition-colors text-xs sm:text-sm">
         Yahya Sameeh P P
       </a>
-
-
 
       <!-- Right: Location & Live Local Time Indicator -->
       <div class="flex items-center gap-2 font-mono text-[11px] sm:text-xs">
@@ -79,11 +63,11 @@
     </div>
   </header>
 
-  <!-- Main Hero & Extended Bento Grid Container -->
-  <main class="w-full max-w-[1720px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20 pt-6 sm:pt-10 lg:pt-12 pb-14 sm:pb-20 flex-1 flex flex-col justify-center relative page-fade-in">
+  <!-- Main Hero & Extended Bento Grid Container (Full-Width Edge-to-Edge, fits 1 single screen without scrolling) -->
+  <main class="w-full flex-1 flex flex-col justify-center px-3 sm:px-6 lg:px-8 py-1 sm:py-2 lg:py-2 relative page-fade-in overflow-hidden">
     
     <!-- Hero Giant Typography: YAHYA SAMEEH PP with Soft Blur Layering -->
-    <div class="relative w-full overflow-hidden select-none pb-2 sm:pb-4 flex justify-center">
+    <div class="relative w-full overflow-hidden select-none pb-1 flex justify-center flex-shrink-0">
       <h1 class="hero-giant-title hero-title-mask tracking-tight uppercase">
         YAHYA SAMEEH PP
       </h1>
@@ -91,60 +75,52 @@
       <div class="hero-mask-gradient"></div>
     </div>
 
-    <!-- =========================================================================
-         EXTENDED BENTO GRID LAYOUT:
-         - Boxes extended horizontally to span across the screen cleanly
-         - Dimensions increased for a bold, architectural, elevated feel
-         ========================================================================= -->
-    <div class="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-4 sm:gap-5 lg:gap-6 relative z-10 -mt-6 sm:-mt-10 lg:-mt-14">
+    <!-- Full-Width Edge-to-Edge Bento Grid Layout (Fits cleanly in 1 page) -->
+    <div class="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-3 sm:gap-3.5 lg:gap-4 relative z-10 -mt-2 sm:-mt-4 lg:-mt-6 w-full">
 
-      <!-- ----------------------------------------------------
-           ROW 1: About & Portfolio (Extended Dimensions)
-           ---------------------------------------------------- -->
+      <!-- ====================================================
+           ROW 1: About & Portfolio (Edge-to-Edge)
+           ==================================================== -->
       
-      <!-- Bento Card 1: About -->
-      <!-- Mobile: full-width / Tablet: 3 cols / Laptop & Desktop: 4 cols -->
+      <!-- Bento Card 1: About (4 cols) -->
       <a 
         href="about.html" 
         data-nav 
-        class="bento-card animate-card delay-1 group col-span-1 md:col-span-3 lg:col-span-4 p-6 sm:p-8 lg:p-9 xl:p-10 flex flex-col justify-end h-52 sm:h-64 md:h-72 lg:h-[340px] xl:h-[390px] 2xl:h-[430px]"
+        class="bento-card animate-card delay-1 group col-span-1 md:col-span-3 lg:col-span-4 p-5 sm:p-6 lg:p-7 flex flex-col justify-end h-44 sm:h-52 md:h-56 lg:h-[clamp(160px,23vh,230px)]"
       >
         <div>
           <span class="bento-heading delay-2 text-lg sm:text-xl lg:text-2xl font-medium tracking-tight text-[#f5f5f7]">About</span>
         </div>
       </a>
 
-      <!-- Bento Card 2: Portfolio (Wide Extended Card) -->
-      <!-- Mobile: full-width / Tablet: 3 cols / Laptop & Desktop: 8 cols -->
+      <!-- Bento Card 2: Portfolio (8 cols) -->
       <a 
         href="portfolio.html" 
         data-nav 
-        class="bento-card animate-card delay-2 group col-span-1 md:col-span-3 lg:col-span-8 p-6 sm:p-8 lg:p-9 xl:p-10 flex flex-col justify-end h-52 sm:h-64 md:h-72 lg:h-[340px] xl:h-[390px] 2xl:h-[430px]"
+        class="bento-card animate-card delay-2 group col-span-1 md:col-span-3 lg:col-span-8 p-5 sm:p-6 lg:p-7 flex flex-col justify-end h-44 sm:h-52 md:h-56 lg:h-[clamp(160px,23vh,230px)]"
       >
         <div>
           <span class="bento-heading delay-3 text-lg sm:text-xl lg:text-2xl font-medium tracking-tight text-[#f5f5f7]">Portfolio</span>
         </div>
       </a>
 
-      <!-- ----------------------------------------------------
+      <!-- ====================================================
            ROW 2: Contact, Portrait, Tech Stack & Resume
-           ---------------------------------------------------- -->
+           ==================================================== -->
 
-      <!-- Bento Card 3: Contact (Wide Extended Card) -->
-      <!-- Mobile: full-width / Tablet: 3 cols / Laptop & Desktop: 5 cols -->
+      <!-- Bento Card 3: Contact (5 cols) -->
       <a 
         href="contact.html" 
         data-nav 
-        class="bento-card animate-card delay-3 group col-span-1 md:col-span-3 lg:col-span-5 p-6 sm:p-8 lg:p-9 xl:p-10 flex flex-col justify-end h-52 sm:h-72 md:h-80 lg:h-[350px] xl:h-[400px] 2xl:h-[440px]"
+        class="bento-card animate-card delay-3 group col-span-1 md:col-span-3 lg:col-span-5 p-5 sm:p-6 lg:p-7 flex flex-col justify-end h-48 sm:h-56 md:h-60 lg:h-[clamp(190px,28vh,275px)]"
       >
         <div>
           <span class="bento-heading delay-4 text-lg sm:text-xl lg:text-2xl font-medium tracking-tight text-[#f5f5f7]">Contact</span>
         </div>
       </a>
 
-      <!-- Bento Card 4: Portrait / Visual (Extended Vertical Monochromatic Frame) -->
-      <!-- Mobile: full-width / Tablet: 3 cols / Laptop & Desktop: 3 cols -->
-      <div class="bento-card animate-card delay-4 group col-span-1 md:col-span-3 lg:col-span-3 h-72 sm:h-80 md:h-80 lg:h-[350px] xl:h-[400px] 2xl:h-[440px] relative p-0 overflow-hidden bg-black flex items-center justify-center">
+      <!-- Bento Card 4: Portrait (3 cols) -->
+      <div class="bento-card animate-card delay-4 group col-span-1 md:col-span-3 lg:col-span-3 h-48 sm:h-56 md:h-60 lg:h-[clamp(190px,28vh,275px)] relative p-0 overflow-hidden bg-black flex items-center justify-center">
         <img 
           src="assets/images/yahya_portrait.png?v=20261006" 
           alt="Yahya Sameeh P P" 
@@ -154,27 +130,26 @@
         <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20 pointer-events-none"></div>
       </div>
 
-      <!-- Bento Right Column: Split into Tech Squircles & Resume -->
-      <!-- Mobile: full-width (2 cols grid) / Tablet: 6 cols (2 cols grid) / Laptop & Desktop: 4 cols (stacked) -->
-      <div class="col-span-1 md:col-span-6 lg:col-span-4 grid grid-cols-2 lg:grid-cols-1 gap-4 sm:gap-5 lg:gap-6 h-auto lg:h-[350px] xl:h-[400px] 2xl:h-[440px]">
+      <!-- Bento Right Column (4 cols): Tooling / Stack & Resume -->
+      <div class="col-span-1 md:col-span-6 lg:col-span-4 grid grid-cols-2 lg:grid-cols-1 gap-3 sm:gap-3.5 lg:gap-4 h-auto lg:h-[clamp(190px,28vh,275px)]">
 
         <!-- Bento Card 5: Tooling / Tech Squircles (Top Card) -->
-        <div class="bento-card animate-card delay-5 p-4 sm:p-6 lg:p-6 flex items-center justify-center gap-3.5 sm:gap-5 lg:gap-6 h-40 sm:h-44 lg:h-[165px] xl:h-[190px] 2xl:h-[210px]">
+        <div class="bento-card animate-card delay-5 p-3 sm:p-4 lg:p-4 flex items-center justify-center gap-3 sm:gap-4 lg:gap-5 h-24 sm:h-28 md:h-30 lg:h-[clamp(88px,13vh,128px)]">
           <!-- Tool Squircle 1: Supabase / Database -->
-          <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-[#18181b] border border-white/[0.08] flex items-center justify-center text-emerald-400 hover:border-white/25 hover:scale-105 transition-all shadow-md" title="Supabase">
-            <i data-lucide="database" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl sm:rounded-2xl bg-[#18181b] border border-white/[0.08] flex items-center justify-center text-emerald-400 hover:border-white/25 hover:scale-105 transition-all shadow-md" title="Supabase">
+            <i data-lucide="database" class="w-4 h-4 sm:w-5 sm:h-5"></i>
           </div>
           <!-- Tool Squircle 2: Kali Linux / Security -->
-          <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-[#18181b] border border-white/[0.08] flex items-center justify-center text-blue-400 hover:border-white/25 hover:scale-105 transition-all shadow-md" title="Cybersecurity & Network Auditing">
-            <i data-lucide="shield" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl sm:rounded-2xl bg-[#18181b] border border-white/[0.08] flex items-center justify-center text-blue-400 hover:border-white/25 hover:scale-105 transition-all shadow-md" title="Cybersecurity & Network Auditing">
+            <i data-lucide="shield" class="w-4 h-4 sm:w-5 sm:h-5"></i>
           </div>
           <!-- Tool Squircle 3: Code / JavaScript / C++ -->
-          <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-[#18181b] border border-white/[0.08] flex items-center justify-center text-amber-400 hover:border-white/25 hover:scale-105 transition-all shadow-md" title="JavaScript & Systems">
-            <i data-lucide="code-2" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl sm:rounded-2xl bg-[#18181b] border border-white/[0.08] flex items-center justify-center text-amber-400 hover:border-white/25 hover:scale-105 transition-all shadow-md" title="JavaScript & Systems">
+            <i data-lucide="code-2" class="w-4 h-4 sm:w-5 sm:h-5"></i>
           </div>
           <!-- Tool Squircle 4: Netlify / Cloud -->
-          <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-[#18181b] border border-white/[0.08] flex items-center justify-center text-cyan-400 hover:border-white/25 hover:scale-105 transition-all shadow-md" title="Netlify Cloud Deployment">
-            <i data-lucide="cloud" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl sm:rounded-2xl bg-[#18181b] border border-white/[0.08] flex items-center justify-center text-cyan-400 hover:border-white/25 hover:scale-105 transition-all shadow-md" title="Netlify Cloud Deployment">
+            <i data-lucide="cloud" class="w-4 h-4 sm:w-5 sm:h-5"></i>
           </div>
         </div>
 
@@ -182,7 +157,7 @@
         <a 
           href="404.html" 
           data-nav 
-          class="bento-card animate-card delay-6 group p-6 sm:p-7 lg:p-8 xl:p-9 flex flex-col justify-end h-40 sm:h-44 lg:h-[165px] xl:h-[190px] 2xl:h-[210px]"
+          class="bento-card animate-card delay-6 group p-4 sm:p-5 lg:p-5 xl:p-6 flex flex-col justify-end h-24 sm:h-28 md:h-30 lg:h-[clamp(88px,13vh,128px)]"
         >
           <div>
             <span class="bento-heading delay-6 text-lg sm:text-xl lg:text-2xl font-medium tracking-tight text-[#f5f5f7]">Resume</span>
@@ -195,18 +170,18 @@
 
   </main>
 
-  <!-- Universal Minimal Footer -->
-  <footer class="w-full border-t border-white/[0.05] bg-[#080808]/90 py-6 sm:py-7 px-4 sm:px-8 lg:px-12 xl:px-16">
-    <div class="max-w-[1720px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 text-xs text-[#71717a]">
+  <!-- Universal Minimal Bottom Bar -->
+  <footer class="w-full border-t border-white/[0.05] bg-[#080808]/90 py-2 sm:py-2.5 px-4 sm:px-6 lg:px-8 flex-shrink-0 z-40">
+    <div class="w-full flex flex-col sm:flex-row items-center justify-between gap-2 text-[11px] text-[#71717a]">
       <!-- Direct Contact Links -->
-      <div class="flex items-center gap-5 sm:gap-6 flex-wrap justify-center">
+      <div class="flex items-center gap-5 flex-wrap justify-center">
         <a href="mailto:yahyasameeh1111@gmail.com" class="hover:text-white transition-colors">yahyasameeh1111@gmail.com</a>
         <a href="https://github.com/yahyasameeh1111" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">GitHub</a>
         <a href="https://www.instagram.com/yyeyy_yyaaa/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Instagram</a>
       </div>
 
       <!-- Copyright -->
-      <div class="font-mono text-[11px] text-[#52525b]">
+      <div class="font-mono text-[10px] sm:text-[11px] text-[#52525b]">
         © 2026 Yahya Sameeh P P. All rights reserved.
       </div>
     </div>
