@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initPillSelections();
   initContactForm();
   initPageTransitions();
+  initScrollAnimations();
   initKeyboardNav();
 });
 
@@ -162,6 +163,28 @@ function initPageTransitions() {
       }
     });
   });
+}
+
+/**
+ * Scroll-Triggered Fade and Slide-In Transitions
+ */
+function initScrollAnimations() {
+  const scrollElements = document.querySelectorAll('.reveal-on-scroll');
+  if (!scrollElements.length) return;
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-revealed');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.08,
+    rootMargin: '0px 0px -20px 0px'
+  });
+
+  scrollElements.forEach((el) => observer.observe(el));
 }
 
 /**

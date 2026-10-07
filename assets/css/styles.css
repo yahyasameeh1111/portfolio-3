@@ -255,16 +255,39 @@ a:hover .arrow-icon {
 /* Text Element & Headings Smooth Transitions */
 .bento-heading {
   display: inline-block;
+  font-size: clamp(1.25rem, 2.1vw, 2.15rem);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
   opacity: 0;
   animation: textSlideInUp 0.75s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), color 0.25s ease, letter-spacing 0.35s ease;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), color 0.25s ease, letter-spacing 0.3s ease;
   will-change: transform, opacity;
 }
 
 .bento-card:hover .bento-heading {
-  transform: translateY(-3px);
+  transform: translate(3px, -3px);
   color: #ffffff;
 }
+
+/* Scroll-Triggered Fade & Slide-in Transitions */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  filter: blur(4px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), filter 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform, filter;
+}
+
+.reveal-on-scroll.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.08s; }
+.reveal-delay-2 { transition-delay: 0.16s; }
+.reveal-delay-3 { transition-delay: 0.24s; }
+.reveal-delay-4 { transition-delay: 0.32s; }
 
 /* Stagger Delays */
 .delay-1 { animation-delay: 0.12s; }
