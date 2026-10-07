@@ -194,18 +194,98 @@ a:hover .arrow-icon {
 
 /* Page Transition animation */
 .page-fade-in {
-  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: fadeIn 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(8px);
+    transform: translateY(12px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Bento Grid Elements - Smooth Slide-in & Fade-in Animations */
+@keyframes bentoFadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes textSlideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(18px);
+    filter: blur(3px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes heroReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(26px);
+    filter: blur(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+/* Card staggered entrance */
+.animate-card {
+  opacity: 0;
+  animation: bentoFadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Text Element & Headings Smooth Transitions */
+.bento-heading {
+  display: inline-block;
+  opacity: 0;
+  animation: textSlideInUp 0.75s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), color 0.25s ease, letter-spacing 0.35s ease;
+  will-change: transform, opacity;
+}
+
+.bento-card:hover .bento-heading {
+  transform: translateY(-3px);
+  color: #ffffff;
+}
+
+/* Stagger Delays */
+.delay-1 { animation-delay: 0.12s; }
+.delay-2 { animation-delay: 0.20s; }
+.delay-3 { animation-delay: 0.28s; }
+.delay-4 { animation-delay: 0.36s; }
+.delay-5 { animation-delay: 0.44s; }
+.delay-6 { animation-delay: 0.52s; }
+
+/* Smooth exit transitions when navigating between sections */
+.page-exiting {
+  opacity: 0 !important;
+  transform: translateY(-14px) !important;
+  filter: blur(3px) !important;
+  transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1), transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), filter 0.25s ease !important;
+}
+
+.heading-exiting {
+  opacity: 0 !important;
+  transform: translateY(-10px) !important;
+  transition: opacity 0.2s ease, transform 0.2s ease !important;
 }
 
 /* Form Styles */

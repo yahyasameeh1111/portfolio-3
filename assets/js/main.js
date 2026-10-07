@@ -145,10 +145,17 @@ function initPageTransitions() {
       const href = link.getAttribute('href');
       if (href && !href.startsWith('http') && !href.startsWith('mailto:') && !href.startsWith('#')) {
         e.preventDefault();
+
+        // Animate headings and text elements smoothly on exit
+        const headings = document.querySelectorAll('.bento-heading, .hero-giant-title, h1');
+        headings.forEach((heading) => {
+          heading.classList.add('heading-exiting');
+        });
+
+        // Smoothly fade & translate the main container
         const main = document.querySelector('main') || document.body;
-        main.style.opacity = '0';
-        main.style.transform = 'translateY(6px)';
-        main.style.transition = 'all 0.25s ease';
+        main.classList.add('page-exiting');
+
         setTimeout(() => {
           window.location.href = href;
         }, 220);
