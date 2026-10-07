@@ -7,13 +7,16 @@ An ultra-dark, minimalist bento-grid personal portfolio website inspired by high
 ## Visual & Technical Highlights
 
 - **Visual Theme & Aesthetics**: Deep matte black canvas (`#080808`), elevated dark container surfaces (`#121214`), hairline borders (`rgba(255, 255, 255, 0.08)`), and soft 24px rounded corners (`rounded-3xl`).
+- **Apple-Inspired Motion System (Framer Motion)**:
+  - **Apple VisionOS / Apple TV 3D Bento Card Tilt**: Real-time 3D perspective rotation with silky spring physics decay and incident light calculations.
+  - **Dual Specular Lighting**: Cursor-following radial light reflections and hairline edge rim glare across matte glass surfaces.
+  - **Keynote Metallic Shimmer**: Interactive dynamic specular light sweep across hero typography.
+  - **Scroll Progress & InView Reveals**: Minimalist hairline progress bar driven by `Motion.scroll` and progressive unblur/spring entrances powered by `Motion.inView`.
+  - **Apple Haptic Press Micro-Interactions**: Tactile spring compression on click/tap and squircle app icon hover bounce.
+  - **Seamless Native Transitions**: Smooth out-scale, blur exit, and fluid page entry transitions.
 - **Cinematic Texture**: Subtle CSS fractal noise film grain overlay across the entire viewport.
-- **Micro-Interactions**:
-  - Spotlight cursor illumination on every Bento card.
-  - Live local clock for **Edappatta, Kerala (Asia/Kolkata - IST)** with animated emerald pulse indicator.
-  - Interactive diagonal arrow hover lifts (`↗`).
-  - Seamless page transitions.
-- **Performance**: Zero-runtime bundle penalty, sub-second First Contentful Paint, optimized for Netlify Edge hosting.
+- **Live Local Clock**: Live local clock for **Malappuram, Kerala (Asia/Kolkata - IST)** with animated emerald pulse indicator.
+- **Performance**: High frame rate (60–120 FPS), GPU-accelerated transforms, zero layout thrashing, and full `prefers-reduced-motion` accessibility support.
 
 ---
 
@@ -21,7 +24,7 @@ An ultra-dark, minimalist bento-grid personal portfolio website inspired by high
 
 ```
 ├── index.html              # Main Home screen (Interactive Bento Grid layout)
-├── about.html              # Subpage: About, bio, principles & technical timeline
+├── about.html              # Subpage: About, bio, and discipline tags
 ├── portfolio.html          # Subpage: Selected projects, mockups & technical tags
 ├── contact.html            # Subpage: Contact split-screen with dark form
 ├── resume.html             # Subpage: Minimalist CV view with print styles
@@ -30,11 +33,13 @@ An ultra-dark, minimalist bento-grid personal portfolio website inspired by high
 ├── netlify.toml            # Netlify build and security headers configuration
 └── assets/
     ├── css/
-    │   └── styles.css      # Custom styling, noise grain, spotlight & animations
+    │   └── styles.css      # Custom styling, 3D tilt, specular lighting & animations
     ├── js/
-    │   └── main.js         # IST clock, spotlight logic, form & nav interactions
+    │   ├── motion.js       # Framer Motion (Motion core engine)
+    │   └── main.js         # Apple motion system, 3D tilt, clock & interactions
     └── images/
         ├── portrait.jpg    # Monochromatic studio portrait
+        ├── yahya_portrait.png # Studio portrait
         ├── api_lab.jpg     # API Learning Lab mockup
         └── cyber_sec.jpg   # Cybersecurity Showcase mockup
 ```

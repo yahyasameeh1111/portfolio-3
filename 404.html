@@ -43,6 +43,10 @@
   <!-- Film Grain Overlay -->
   <div class="film-grain"></div>
 
+  <!-- Apple Scroll Progress Bar & Ambient Cursor Atmosphere -->
+  <div class="apple-scroll-progress"></div>
+  <div class="ambient-spotlight"></div>
+
   <!-- Persistent Glass Header -->
   <header class="sticky top-0 z-50 w-full glass-header px-4 sm:px-8 py-3.5 transition-all duration-300">
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-4 text-xs tracking-tight text-[#8e8e93]">
@@ -51,8 +55,6 @@
         <i data-lucide="chevron-left" class="w-4 h-4 group-hover:-translate-x-1 transition-transform"></i>
         <span>Home</span>
       </a>
-
-
 
       <!-- Right: Location & Live Local Time Indicator -->
       <div class="flex items-center gap-2 font-mono text-[11px] sm:text-xs">
@@ -68,9 +70,9 @@
 
   <!-- Main Content: Centered 404 Card matching Reference Screenshot 3 -->
   <main class="w-full max-w-2xl mx-auto px-4 sm:px-6 pt-16 sm:pt-24 pb-24 flex-1 flex items-center justify-center page-fade-in">
-    <div class="bento-card animate-card w-full p-8 sm:p-14 text-center bg-[#121214] border border-white/[0.08] shadow-2xl">
+    <div class="bento-card w-full p-8 sm:p-14 text-center bg-[#121214] border border-white/[0.08] shadow-2xl reveal-on-scroll">
       <!-- Big 404 -->
-      <div class="bento-heading text-7xl sm:text-9xl font-bold tracking-tighter text-white mb-6 select-none">
+      <div class="bento-heading hero-apple-shimmer text-7xl sm:text-9xl font-bold tracking-tighter text-white mb-6 select-none">
         404
       </div>
 
@@ -83,7 +85,7 @@
         <a 
           href="index.html" 
           data-nav
-          class="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-white text-black font-medium text-sm hover:bg-[#e4e4e7] active:scale-[0.98] transition-all"
+          class="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-white text-black font-medium text-sm hover:bg-[#e4e4e7] active:scale-95 transition-all shadow-lg"
         >
           <span>Back to Home</span>
         </a>
@@ -109,6 +111,7 @@
   </footer>
 
   <!-- Scripts -->
+  <script src="assets/js/motion.js"></script>
   <script src="assets/js/main.js"></script>
   <script>
     lucide.createIcons();

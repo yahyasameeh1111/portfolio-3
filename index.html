@@ -43,6 +43,10 @@
   <!-- Film Grain Overlay -->
   <div class="film-grain"></div>
 
+  <!-- Apple Scroll Progress Bar & Ambient Cursor Atmosphere -->
+  <div class="apple-scroll-progress"></div>
+  <div class="ambient-spotlight"></div>
+
   <!-- Persistent Top Header (Full-Width Edge-to-Edge) -->
   <header class="w-full glass-header px-4 sm:px-6 lg:px-8 py-2 sm:py-2.5 transition-all duration-300 z-50 flex-shrink-0">
     <div class="w-full flex items-center justify-between text-xs tracking-tight text-[#8e8e93]">
@@ -66,17 +70,17 @@
   <!-- Main Hero & Extended Bento Grid Container (Full-Width Edge-to-Edge, fits 1 single screen without scrolling) -->
   <main class="w-full flex-1 flex flex-col justify-center px-3 sm:px-6 lg:px-8 py-1 sm:py-2 lg:py-2 relative page-fade-in overflow-hidden">
     
-    <!-- Hero Giant Typography: YAHYA SAMEEH PP with Soft Blur Layering -->
+    <!-- Hero Giant Typography: YAHYA SAMEEH PP with Apple Metallic Shimmer & Soft Blur Layering -->
     <div class="relative w-full overflow-hidden select-none pb-1 flex justify-center flex-shrink-0">
-      <h1 class="hero-giant-title hero-title-mask tracking-tight uppercase">
+      <h1 class="hero-giant-title hero-apple-shimmer tracking-tight uppercase">
         YAHYA SAMEEH PP
       </h1>
       <!-- Frosted blur gradient mask so extended cards overlap seamlessly -->
       <div class="hero-mask-gradient"></div>
     </div>
 
-    <!-- Full-Width Edge-to-Edge Bento Grid Layout (Fits cleanly in 1 page) -->
-    <div class="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-3 sm:gap-3.5 lg:gap-4 relative z-10 -mt-2 sm:-mt-4 lg:-mt-6 w-full">
+    <!-- Full-Width Edge-to-Edge Bento Grid Layout with 3D Perspective -->
+    <div class="bento-grid-perspective grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-3 sm:gap-3.5 lg:gap-4 relative z-10 -mt-2 sm:-mt-4 lg:-mt-6 w-full">
 
       <!-- ====================================================
            ROW 1: About & Portfolio (Edge-to-Edge)
@@ -86,10 +90,10 @@
       <a 
         href="about.html" 
         data-nav 
-        class="bento-card animate-card delay-1 group col-span-1 md:col-span-3 lg:col-span-4 p-5 sm:p-6 lg:p-7 flex flex-col justify-end h-44 sm:h-52 md:h-56 lg:h-[clamp(160px,23vh,230px)]"
+        class="bento-card animate-card group col-span-1 md:col-span-3 lg:col-span-4 p-5 sm:p-6 lg:p-7 flex flex-col justify-end h-44 sm:h-52 md:h-56 lg:h-[clamp(160px,23vh,230px)]"
       >
         <div>
-          <span class="bento-heading delay-2 text-lg sm:text-xl lg:text-2xl font-medium tracking-tight text-[#f5f5f7]">About</span>
+          <span class="bento-heading text-lg sm:text-xl lg:text-2xl font-medium tracking-tight text-[#f5f5f7]">About</span>
         </div>
       </a>
 
@@ -97,10 +101,10 @@
       <a 
         href="portfolio.html" 
         data-nav 
-        class="bento-card animate-card delay-2 group col-span-1 md:col-span-3 lg:col-span-8 p-5 sm:p-6 lg:p-7 flex flex-col justify-end h-44 sm:h-52 md:h-56 lg:h-[clamp(160px,23vh,230px)]"
+        class="bento-card animate-card group col-span-1 md:col-span-3 lg:col-span-8 p-5 sm:p-6 lg:p-7 flex flex-col justify-end h-44 sm:h-52 md:h-56 lg:h-[clamp(160px,23vh,230px)]"
       >
         <div>
-          <span class="bento-heading delay-3 text-lg sm:text-xl lg:text-2xl font-medium tracking-tight text-[#f5f5f7]">Portfolio</span>
+          <span class="bento-heading text-lg sm:text-xl lg:text-2xl font-medium tracking-tight text-[#f5f5f7]">Portfolio</span>
         </div>
       </a>
 
@@ -112,15 +116,15 @@
       <a 
         href="contact.html" 
         data-nav 
-        class="bento-card animate-card delay-3 group col-span-1 md:col-span-3 lg:col-span-5 p-5 sm:p-6 lg:p-7 flex flex-col justify-end h-48 sm:h-56 md:h-60 lg:h-[clamp(190px,28vh,275px)]"
+        class="bento-card animate-card group col-span-1 md:col-span-3 lg:col-span-5 p-5 sm:p-6 lg:p-7 flex flex-col justify-end h-48 sm:h-56 md:h-60 lg:h-[clamp(190px,28vh,275px)]"
       >
         <div>
-          <span class="bento-heading delay-4 text-lg sm:text-xl lg:text-2xl font-medium tracking-tight text-[#f5f5f7]">Contact</span>
+          <span class="bento-heading text-lg sm:text-xl lg:text-2xl font-medium tracking-tight text-[#f5f5f7]">Contact</span>
         </div>
       </a>
 
       <!-- Bento Card 4: Portrait (3 cols) -->
-      <div class="bento-card animate-card delay-4 group col-span-1 md:col-span-3 lg:col-span-3 h-48 sm:h-56 md:h-60 lg:h-[clamp(190px,28vh,275px)] relative p-0 overflow-hidden bg-black flex items-center justify-center">
+      <div class="bento-card animate-card group col-span-1 md:col-span-3 lg:col-span-3 h-48 sm:h-56 md:h-60 lg:h-[clamp(190px,28vh,275px)] relative p-0 overflow-hidden bg-black flex items-center justify-center">
         <img 
           src="assets/images/yahya_portrait.png?v=20261006" 
           alt="Yahya Sameeh P P" 
@@ -134,33 +138,33 @@
       <div class="col-span-1 md:col-span-6 lg:col-span-4 grid grid-cols-2 lg:grid-cols-1 gap-3 sm:gap-3.5 lg:gap-4 h-auto lg:h-[clamp(190px,28vh,275px)]">
 
         <!-- Bento Card 5: Tooling / Tech Squircles (Top Card) -->
-        <div class="bento-card animate-card delay-5 p-3 sm:p-4 lg:p-4 flex items-center justify-center gap-3 sm:gap-4 lg:gap-5 h-24 sm:h-28 md:h-30 lg:h-[clamp(88px,13vh,128px)]">
+        <div class="bento-card animate-card p-3 sm:p-4 lg:p-4 flex items-center justify-center gap-3 sm:gap-4 lg:gap-5 h-24 sm:h-28 md:h-30 lg:h-[clamp(88px,13vh,128px)]">
           <!-- Tool Squircle 1: Supabase / Database -->
-          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl sm:rounded-2xl bg-[#18181b] border border-white/[0.08] flex items-center justify-center text-emerald-400 hover:border-white/25 hover:scale-105 transition-all shadow-md" title="Supabase">
+          <div class="tech-squircle w-10 h-10 sm:w-11 sm:h-11 rounded-xl sm:rounded-2xl bg-[#18181b] border border-white/[0.08] flex items-center justify-center text-emerald-400 hover:border-white/25 transition-all shadow-md cursor-default" title="Supabase">
             <i data-lucide="database" class="w-4 h-4 sm:w-5 sm:h-5"></i>
           </div>
           <!-- Tool Squircle 2: Kali Linux / Security -->
-          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl sm:rounded-2xl bg-[#18181b] border border-white/[0.08] flex items-center justify-center text-blue-400 hover:border-white/25 hover:scale-105 transition-all shadow-md" title="Cybersecurity & Network Auditing">
+          <div class="tech-squircle w-10 h-10 sm:w-11 sm:h-11 rounded-xl sm:rounded-2xl bg-[#18181b] border border-white/[0.08] flex items-center justify-center text-blue-400 hover:border-white/25 transition-all shadow-md cursor-default" title="Cybersecurity & Network Auditing">
             <i data-lucide="shield" class="w-4 h-4 sm:w-5 sm:h-5"></i>
           </div>
           <!-- Tool Squircle 3: Code / JavaScript / C++ -->
-          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl sm:rounded-2xl bg-[#18181b] border border-white/[0.08] flex items-center justify-center text-amber-400 hover:border-white/25 hover:scale-105 transition-all shadow-md" title="JavaScript & Systems">
+          <div class="tech-squircle w-10 h-10 sm:w-11 sm:h-11 rounded-xl sm:rounded-2xl bg-[#18181b] border border-white/[0.08] flex items-center justify-center text-amber-400 hover:border-white/25 transition-all shadow-md cursor-default" title="JavaScript & Systems">
             <i data-lucide="code-2" class="w-4 h-4 sm:w-5 sm:h-5"></i>
           </div>
           <!-- Tool Squircle 4: Netlify / Cloud -->
-          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl sm:rounded-2xl bg-[#18181b] border border-white/[0.08] flex items-center justify-center text-cyan-400 hover:border-white/25 hover:scale-105 transition-all shadow-md" title="Netlify Cloud Deployment">
+          <div class="tech-squircle w-10 h-10 sm:w-11 sm:h-11 rounded-xl sm:rounded-2xl bg-[#18181b] border border-white/[0.08] flex items-center justify-center text-cyan-400 hover:border-white/25 transition-all shadow-md cursor-default" title="Netlify Cloud Deployment">
             <i data-lucide="cloud" class="w-4 h-4 sm:w-5 sm:h-5"></i>
           </div>
         </div>
 
         <!-- Bento Card 6: Resume (Bottom Card) -->
         <a 
-          href="404.html" 
+          href="resume.html" 
           data-nav 
-          class="bento-card animate-card delay-6 group p-4 sm:p-5 lg:p-5 xl:p-6 flex flex-col justify-end h-24 sm:h-28 md:h-30 lg:h-[clamp(88px,13vh,128px)]"
+          class="bento-card animate-card group p-4 sm:p-5 lg:p-5 xl:p-6 flex flex-col justify-end h-24 sm:h-28 md:h-30 lg:h-[clamp(88px,13vh,128px)]"
         >
           <div>
-            <span class="bento-heading delay-6 text-lg sm:text-xl lg:text-2xl font-medium tracking-tight text-[#f5f5f7]">Resume</span>
+            <span class="bento-heading text-lg sm:text-xl lg:text-2xl font-medium tracking-tight text-[#f5f5f7]">Resume</span>
           </div>
         </a>
 
@@ -188,6 +192,7 @@
   </footer>
 
   <!-- Scripts -->
+  <script src="assets/js/motion.js"></script>
   <script src="assets/js/main.js"></script>
   <script>
     lucide.createIcons();

@@ -43,6 +43,10 @@
   <!-- Film Grain Overlay -->
   <div class="film-grain"></div>
 
+  <!-- Apple Scroll Progress Bar & Ambient Cursor Atmosphere -->
+  <div class="apple-scroll-progress"></div>
+  <div class="ambient-spotlight"></div>
+
   <!-- Persistent Glass Header -->
   <header class="sticky top-0 z-50 w-full glass-header px-4 sm:px-8 py-3.5 transition-all duration-300">
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-4 text-xs tracking-tight text-[#8e8e93]">
@@ -51,8 +55,6 @@
         <i data-lucide="chevron-left" class="w-4 h-4 group-hover:-translate-x-1 transition-transform"></i>
         <span>Home</span>
       </a>
-
-
 
       <!-- Right: Location & Live Local Time Indicator -->
       <div class="flex items-center gap-2 font-mono text-[11px] sm:text-xs">
@@ -71,7 +73,7 @@
     
     <!-- Hero Title -->
     <div class="max-w-3xl mb-12 sm:mb-16">
-      <h1 class="bento-heading text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#f5f5f7] leading-tight">
+      <h1 class="bento-heading hero-apple-shimmer text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#f5f5f7] leading-tight">
         Selected projects representing my web development and technical journey.
       </h1>
       <p class="mt-4 text-base sm:text-lg text-[#8e8e93]">
@@ -79,11 +81,11 @@
       </p>
     </div>
 
-    <!-- Project Bento Grid (Matching Reference Image 4) -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+    <!-- Project Bento Grid with 3D Perspective -->
+    <div class="bento-grid-perspective grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
 
       <!-- Project 1: API Learning Lab (Col 1) -->
-      <div class="bento-card animate-card delay-1 group p-5 sm:p-6 flex flex-col justify-between">
+      <div class="bento-card reveal-on-scroll group p-5 sm:p-6 flex flex-col justify-between">
         <!-- Mockup Display Container -->
         <div class="w-full aspect-[16/10] rounded-xl overflow-hidden bg-black/80 border border-white/[0.06] mb-5 relative">
           <img 
@@ -123,7 +125,7 @@
       </div>
 
       <!-- Project 2: Cybersecurity Portfolio & Web Showcase (Col 2) -->
-      <div class="bento-card group p-5 sm:p-6 flex flex-col justify-between">
+      <div class="bento-card reveal-on-scroll group p-5 sm:p-6 flex flex-col justify-between">
         <!-- Mockup Display Container -->
         <div class="w-full aspect-[16/10] rounded-xl overflow-hidden bg-black/80 border border-white/[0.06] mb-5 relative">
           <img 
@@ -163,7 +165,7 @@
       </div>
 
       <!-- Project 3: Network Recon & Vulnerability Auditor (Full-Width Featured Card) -->
-      <div class="bento-card group md:col-span-2 p-6 sm:p-8 flex flex-col justify-between">
+      <div class="bento-card reveal-on-scroll group md:col-span-2 p-6 sm:p-8 flex flex-col justify-between">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
           <div class="lg:col-span-7 space-y-4">
             <div class="flex items-center gap-2 text-xs font-mono text-emerald-400">
@@ -214,7 +216,7 @@
       </div>
 
       <!-- Project 4: Secure Auth & Role-Based Session Vault -->
-      <div class="bento-card group p-5 sm:p-6 flex flex-col justify-between">
+      <div class="bento-card reveal-on-scroll group p-5 sm:p-6 flex flex-col justify-between">
         <div class="space-y-4">
           <div class="flex items-center justify-between">
             <div class="h-10 w-10 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400">
@@ -247,7 +249,7 @@
       </div>
 
       <!-- Project 5: Core Memory & System Emulation Lab -->
-      <div class="bento-card group p-5 sm:p-6 flex flex-col justify-between">
+      <div class="bento-card reveal-on-scroll group p-5 sm:p-6 flex flex-col justify-between">
         <div class="space-y-4">
           <div class="flex items-center justify-between">
             <div class="h-10 w-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400">
@@ -301,6 +303,7 @@
   </footer>
 
   <!-- Scripts -->
+  <script src="assets/js/motion.js"></script>
   <script src="assets/js/main.js"></script>
   <script>
     lucide.createIcons();
